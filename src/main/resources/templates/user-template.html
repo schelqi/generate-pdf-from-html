@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        p {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ecf0f1;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #e67e22;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+    </style>
+</head>
+
+<body>
+<h1>User Info</h1>
+<p>UID: <span th:text="${user.uid}"></span></p>
+<p>FIRST NAME: <span th:text="${user.firstName}"></span></p>
+<p>LAST NAME: <span th:text="${user.lastName}"></span></p>
+</body>
+</html>
